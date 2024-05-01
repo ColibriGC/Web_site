@@ -1,4 +1,3 @@
-
 function setup() {
   createCanvas(windowWidth, windowHeight);
   //createCanvas(1000, 700);
@@ -8,8 +7,8 @@ function setup() {
 }
 
 function draw() {
-  background(100);
-
+  background(105,105,105);
+  text('Un arbre fractal', 100, 100)
   translate(width / 2, height / 1.3);
 
   branch(100);
