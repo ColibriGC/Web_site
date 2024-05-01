@@ -8,10 +8,22 @@ function setup() {
 
 function draw() {
   background(105,105,105);
-  text('Un arbre fractal', width/2, height/2)
-  translate(width / 2, height / 1.3);
+  
+  description();
+
+
+  translate(width / 2, height / 1.25);
 
   branch(100);
+}
+
+function description() {
+  let title = 'Un arbre fractal';
+  let s = textWidth(title);
+  textSize(20);
+  stroke(255);
+  fill(255);
+  text(title , width*0.5 - s*0.5, height*0.9)
 }
 
 function branch(len) {
